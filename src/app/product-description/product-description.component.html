@@ -1,3 +1,30 @@
-<p>
-  product-description works!
-</p>
+<div class="row description">
+  <div class="col-sm-2">
+    <img [src]="albumInfo?.album?.coverImage" alt="product image" />
+  </div>
+  <div class="col-sm-6">
+    <p class="album-name"> {{ albumInfo?.album.name }} </p>
+    <p class="band-name"> {{ albumInfo?.artist }} </p>
+    <p class="album-release-date"> {{ albumInfo?.album.releaseDate }} </p>
+  </div>
+</div>
+</div>
+<div class="row">
+  <div class="col-sm-8">
+    <div class="row tracklisting">
+      <ul>
+        <li>
+          <div class="col-sm-5">
+            <span class="track-number">1</span>
+            <span class="track-name">The Last</span>
+          </div>
+          <div class="col-sm-3 text-right">
+            <span class="track-time">4:48</span>
+            <span class="price-and-buy">
+              <button>$0.99</button>
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
